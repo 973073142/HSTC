@@ -1,0 +1,7 @@
+function openNews(){
+
+}
+
+module.exports = {
+
+}

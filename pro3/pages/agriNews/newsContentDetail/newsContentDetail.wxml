@@ -1,0 +1,48 @@
+<!--pages/agriNews/newsContentDetail/newsContentDetail.wxml-->
+
+<import src="../imageSwiper/imageSwiper.wxml" />
+<!-- <text>pages/agriCircle/shareContentDetail/shareContentDetail.wxml</text> -->
+<!-- 不知道为什么加了一层view就显示不出来？？？暂时查不出原因 -->
+<!-- 要传进去一个参数，来控制轮播图是否轮播 -->
+<view class='imageSwiperV'>
+  <template is="imageSwiper" class="abs" data="{{...imageSwiper}}"></template>
+</view>
+<!-- view class='imageSwiperV'结束 -->
+<!-- <switch class='isAuto'>自动切换图片</switch> -->
+<view class='DetialContainer'>
+  <view>
+    <!-- class="{{scrollTop>200 ? 'topnavFixed' : 'topnavAbsolute'}}" -->
+    <!-- 设置轮播是否自动播放 -->
+    <view class='isAuto'  bindtap='switchChangeV'>
+      <text>自动切换</text>
+      <switch type='checkbox' checked="{{isAutoplay}}"></switch>
+    </view>
+
+    <view class='authorMsg'>
+      <image class='authorIcon' src='{{news.Icon}}' />
+      <text class='authorName'>{{news.posterScreenName}}</text>
+
+    </view>
+    <view style='display:block; width:100%; border-top: 1px #d8d8cb solid; float:left;margin-bottom:15rpx;' />
+    <!-- view class='authorMsg' 结束 -->
+    <!-- 如果可以，将文本切割成一段一段的，增加段落感 -->
+    <view style="width:96%;">
+    <scroll-view>
+    <view class='newsTitle'><text space="emsp"> {{news.title}}</text> </view>
+      <view class='content'>
+        <!-- space="ensp"  空格是中文字符一半大小-->
+        <!-- space="emsp"  空格是中文字符大小-->
+        <!-- space="nbsp"  空格根据字体设置 -->
+        <!-- decode="{{true}}"  &ensp; &emsp;  &nbsp; -->
+        <text class='content' space="emsp">  {{news.content}}</text>
+      </view>
+    </scroll-view>
+</view>
+
+  </view>
+  <!-- <view style='display:block; width:100%; border-top: 1px #d8d8cb solid; float:left;' /> -->
+  <view class='noneV'></view>
+
+</view>
+
+<!-- view class='DetialContainer' -->

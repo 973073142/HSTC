@@ -1,0 +1,17 @@
+<template name="collectListTemplate" data='{{item}}'>
+  <view class='collect-box' bindtap='goDetail' data-sid="{{item.sid}}">
+    <view class='news'>
+      <image class='newsIcon' src='{{item.simg1}}' />
+      <!-- 图片选取图片列表的一张图片就行第一张图片 -->
+      <view class='newsContent'>
+      <view style='width:500rpx;height:80rpx;' >
+      <text class='newsTitle'>{{item.stitle}}</text>
+      </view>
+          <text class='newsDate'>{{item.sdate}}</text>        
+      </view>
+
+      <!-- <view class='newsContent'> end -->
+    </view>
+     <!-- <view class='news'> end -->
+  </view>
+</template>

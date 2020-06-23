@@ -1,0 +1,31 @@
+/* pages/agriCircle/agriCircle.wxss */
+@import "imageSwiper/imageSwiper.wxss";
+/* aritcleList 是消息的最外层view */
+@import "share/share.wxss";
+
+page{
+  background-color: rgb(233, 252, 215);
+}
+.containerView {
+  /* display: flex; */
+  flex-direction: column;
+  align-items: center;
+  /* background-color: #f1f1f1; */
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+
+.add{
+  position:fixed; 
+  bottom: 150rpx;
+  right: 50rpx;
+  z-index: 50;
+}
+.add .addIcon{
+  
+  /* background-color: black; */
+  width: 100rpx;/*只有在图片上改宽高才有效*/
+  height: 100rpx;/*只有在图片上改宽高才有效*/
+  border-radius: 50%;
+}
+

@@ -1,0 +1,97 @@
+/* pages/My/landing/landing.wxss */
+
+.mainV {
+  position: relative;
+  top: 150rpx;
+  margin: 0rpx 20rpx 0rpx 20rpx;
+  font-size: 40rpx;
+  /* margin-left: 40rpx; */
+}
+
+.Box {
+  position: relative;
+  left: 150rpx;
+}
+
+.accountV {
+  width: 80%;
+  height: 40rpx;
+  display: flex;
+  margin-bottom: 60rpx;
+}
+
+.accountV .account {
+  position: absolute;
+  left: 120rpx;
+}
+
+.accountV text {
+  width: 100rpx;
+  height: 40rpx;
+  font-size: 40rpx;
+}
+
+.nameV {
+  width: 80%;
+  height: 40rpx;
+  margin-top: 50rpx;
+  margin-bottom: 60rpx;
+}
+
+.nameV .name {
+  position: absolute;
+  left: 120rpx;
+}
+
+.iconV {
+  width: 100%;
+  height: 120rpx;
+  margin-top: 50rpx;
+  margin-bottom: 60rpx;
+}
+
+.img {
+  width: 120rpx;
+  height: 120rpx;
+  z-index: 10;
+}
+
+.pswV {
+  display: flex;
+  width: 80%;
+  height: 40rpx;
+  margin-top: 50rpx;
+  margin-bottom: 60rpx;
+}
+
+.pswV .psw {
+  position: absolute;
+  left: 120rpx;
+}
+
+.RadioV {
+  position: relative;
+  margin-left: 40rpx;
+  margin-top: 200rpx;
+}
+
+.chooseRadio radio {
+  margin-right: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+/* .radio{
+  margin-left: 20rpx;
+} */
+
+.confirm {
+  width: 80%;
+  height: 80rpx;
+  margin-top: 50rpx;
+}
+
+.confirm text {
+  font-size: 45rpx;
+  position: relative;
+  bottom: 15rpx;
+}

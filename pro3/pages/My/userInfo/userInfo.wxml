@@ -1,0 +1,37 @@
+<!--pages/My/userInfo/userInfo.wxml-->
+<!-- <text>pages/My/userInfo/userInfo.wxml</text> -->
+
+<view class='userInfo'>
+  <view>
+    <!--  用户名称、用户联系方式、 -->
+    <!--  用户名称一开始是微信名称，后期可以更改用户名称，在数据库中两个数据是不同的列 -->
+    <!-- 微信授权登陆使用就将微信名称赋值给用户名称 -->
+    <!-- 默认密码是123456 可更改 -->
+    <!-- 用 用户名 和密码进行登录 -->
+
+    <!-- 展示以头像和名称就行了 -->
+    <view class='userIcon'>
+      <text>用户头像：</text>
+      <image class='icon' wx:if="{{hasUser==1}}" src='{{user.uicon}}' />
+      <image class='icon' wx:else src='{{defaultIcon}}' />
+    </view>
+
+    <!-- 如果有账号，那就可以显示用户名称，如果没有账号，就显示登陆 -->
+    <!-- <view class='userAccount'>
+      <text>用户账号：</text>
+      <view style='width:200rpx;height:auto;'>
+        <text>{{hasUser?user.uaccount:'未登陆'}}</text>
+      </view>
+
+    </view> -->
+    <view class='userName'>
+      <text>用户名称：</text>
+      <view style='width:300rpx;height:auto;'>
+        <text>{{hasUser!=0?user.uname:'未登陆'}}</text>
+      </view>
+
+    </view>
+
+  </view>
+
+</view>

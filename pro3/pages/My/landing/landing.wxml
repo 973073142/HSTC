@@ -1,0 +1,59 @@
+<!--pages/My/landing/landing.wxml-->
+<!-- <text>pages/My/landing/landing.wxml</text> -->
+
+<view class='mainV'>
+  <view class='Box'>
+    <!-- box1 ？ 微信登陆：管理员登录 -->
+    <view wx:if='{{showInput&&!box1}}'>
+      <view class='accountV'>
+        <view>账号：</view>
+        <textarea class='account' maxlength='10' placeholder='请输入账号...' bindinput='accountInput' focus='false'></textarea>
+      </view>
+      <view class='pswV'>
+        <text>密码：</text>
+        <input class='psw' password='true' maxlength='10' placeholder='请输入密码...' bindinput='pswInput' focus='false'></input>
+      </view>
+    </view>
+    <!-- 微信授权登陆界面 -->
+    <view wx:else>
+      <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b10000_10000&sec=1567845974&di=f97a72379fa0f286b109ad0a44d1206b&src=http://s16.sinaimg.cn/mw690/70b5496btdc97f32f0d1f&690" style='border-radius:50%; width:250rpx;height:250rpx;position:relative;left:90rpx;'
+      />
+    </view>
+    <!-- 这是两个选框 -->
+    <view class='RadioV' wx:if='{{hasUser==0}}'>
+      <label class='chooseRadio' bindtap='radioChange'>
+        <radio value='1' checked='{{box1}}' data-checked="{{box1}}">微信登陆</radio>
+        <view></view>
+        <radio value='2' checked='{{box2}}' data-checked="{{box2}}">管理员登录</radio>
+      </label>
+    </view>
+
+
+  </view>
+  <!-- <view class='Box'> end -->
+  <view wx:if='{{hasUser==0}}'>
+    <button wx:if="{{box1}}" class='confirm' bindgetuserinfo='getUserInfo' open-type='getUserInfo'>
+      <text space='emsp'>微信登陆</text>
+    </button>
+    <button wx:else class='confirm' catchtap='confirm'>
+      <text space='emsp'>管理员登录</text>
+    </button>
+  </view>
+
+
+  <view wx:else>
+    <!-- 登陆成功后的页面按钮会变化成 退出 + 返回 -->
+    <button class='confirm' bindtap='exitLangding'>
+      <text space='emsp'>退 出</text>
+    </button>
+    <button class='confirm' bindtap='reBackPage'>
+      <text space='emsp'>返 回</text>
+    </button>
+  </view>
+
+
+
+
+
+
+</view>
