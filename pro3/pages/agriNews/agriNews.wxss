@@ -1,0 +1,2 @@
+/* pages/agriNews/agriNews.wxss */
+@import "newsListTemplate/newsListTemplate.wxss";

@@ -1,0 +1,15 @@
+<template name="newsList" >
+  <view class='news-box'  bindtap='goNewsDetail' data-id='{{item.id}}'>
+    <view class='news'>
+      <image class='newsIcon' src='{{item.Icon}}' />
+      <view class='newsContent'>
+        <text class='newsTitle'>{{item.subTitle}}</text>
+        <view class='newsMsg'>
+          <text class='newsSource'>{{item.publish}}</text>
+          <text class='newsDate'>{{item.publishDateStr}}</text>
+        </view>
+
+      </view>
+    </view>
+  </view>
+</template>

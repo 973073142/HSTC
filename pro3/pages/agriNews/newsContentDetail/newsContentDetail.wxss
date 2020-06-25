@@ -1,0 +1,110 @@
+/* pages/agriNews/newsContentDetail/newsContentDetail.wxss */
+@import "../imageSwiper/imageSwiper.wxss";
+
+/* 想要将轮播图固定在界面顶部 */
+
+
+.imageSwiperV {
+  width: 100%;
+  height: 360rpx;
+  background-color: #fdf5f4;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  /* justify-content: center; *//* padding-left: 50rpx; *//* margin-left: 30rpx; *//* margin-right: rpx; */
+  border-bottom: 3px white solid;
+}
+
+.DetialContainer {
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f1f1f1;
+  /* margin-left: 20rpx;
+  margin-right: 20rpx; */
+  padding-left: 15rpx;
+  padding-right: 15rpx;
+  position: absolute;
+  top: 360rpx;
+  border-bottom: 10px white solid;
+}
+
+.isAuto {
+  /* display: block; *//* font-size: 20rpx; *//* height: 50rpx;
+  width: 100rpx; */
+  float: right;
+  margin-right: 10rpx;
+  margin-top: 5rpx;
+  z-index: 10;
+}
+
+.isAuto switch {
+  /* width:20rpx !important;
+    height:20rpx !important; */
+  margin-right: 45rpx;
+  margin-left: 8rpx;
+  /* margin-bottom: 5rpx; */
+  zoom: 0.7;
+  
+}
+
+.isAuto text {
+  /* 如何将文字相对于switch框进行居中 */
+  font-size: 30rpx;
+  font-weight: 580;
+  padding-top: 10rpx;
+  margin-top: 20rpx;
+  z-index: 4;
+  position:relative;
+  top: 5rpx;
+
+}
+
+
+.authorMsg {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10rpx;
+  margin-bottom: 5rpx;
+}
+
+.authorIcon {
+  width: 100rpx;
+  height: 100rpx;
+  vertical-align: 10rpx;
+  border-radius: 50%;
+  margin-top: 15rpx;
+  margin-left: 15rpx;
+}
+
+.authorName {
+  font-size: 40rpx;
+  font-weight: 720;
+  margin-left: 20rpx;
+  margin-top: 50rpx;
+  padding-bottom: 30rpx;
+}
+/* 因为前面的view上是position:absolute，所以 noneV要position: absolute;或者是放于上面的view上 */
+
+
+.newsTitle{
+  font-size: 44rpx;
+  font-weight: 600;
+  
+}
+.content {
+  font-size: 38rpx;
+  font-weight: 500;
+  font-family: serif;
+  /*  Times, TimesNR, 'New Century Schoolbook',
+     Georgia, 'New York', serif; */
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+}
+
+.noneV {
+
+  width: 100%;
+  height: 150rpx;
+  background-color: white;
+}

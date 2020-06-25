@@ -1,0 +1,52 @@
+/* pages/My/adminManage/adminMange.wxss */
+
+
+
+.news {
+  display: flex;
+  flex-direction: row;
+  width: 95%;
+  height: 140rpx;
+  /* border: 1rpx black solid; */
+  margin-left: 15rpx;
+  margin-bottom: 15rpx;
+  background-color: #fdf5f4;
+}
+
+.newsIcon {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 20%;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+}
+
+.ContentV {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  /* border: 1rpx black solid; */
+  width: 600rpx;
+}
+
+.stitle {
+  font-size: 40rpx;
+  font-weight: 600;
+}
+
+.authorName {
+  font-size: 34rpx;
+  font-weight: 500;
+  margin-right: 40rpx;
+}
+
+.sdate {
+  font-size: 32rpx;
+}
+
+.delIcon {
+  width: 60rpx;
+  height: 60rpx;
+  margin-top: 50rpx;
+}

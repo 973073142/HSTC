@@ -1,0 +1,8 @@
+{
+  "usingComponents": {},
+  "backgroundColor":"white",
+  "backgroundTextStyle":"dark",
+  "enablePullDownRefresh":true,
+  "onReachBottomDistance":100,
+  "navigationBarTitleText": "管理信息"
+}
